@@ -1,0 +1,192 @@
+
+h1{
+font-size: 2rem;
+font-weight: bold;
+text-align: center;
+}
+
+#title-sus{
+    background-color: #f2f1f0;
+  background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#title-sus h1{
+    padding-top:5%;
+   font-size: 2rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+#title-sus h3{
+    color:gray;
+}
+
+#title-sus h4{
+   margin-bottom: 0;
+    padding-bottom:5%;
+    font-style: italic;
+    color: gray;
+    opacity: 0.8;
+ }
+
+ .water-flex{
+     display: flex;
+     flex-wrap: wrap;
+     text-align: center;
+     justify-content: space-around;
+ }
+
+ .water-1{
+     width: 300px;
+ }
+
+ .water-1 h5{
+    font-weight: bold;
+}
+.water-1 p{
+ 
+    color: gray;
+}
+
+.water-1 img{
+    width: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#water-content{
+    margin:5% 0;
+    background-color: #FFF3D9;
+    padding:5%;
+}
+
+#water-content h1{
+    color:goldenrod;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+#water-content p{
+font-size: 1.5rem;
+}
+
+/* 3D Cube */
+
+.scene {
+    width: 360px;
+    height: 360px;
+    margin: 0 auto;
+    margin-top: 80px;
+    perspective: 600px;
+  }
+  
+  
+  
+  .cube {
+    position: relative;
+    width: inherit;
+    height: inherit;
+  
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  .cube-face {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+  }
+  
+  .cube-face-front {
+    background-image: url(../images/b1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: translate3d(0, 0, 180px);
+  }
+  
+  .cube-face-back {
+    background-image: url(../images/b2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: rotateY(180deg) translate3d(0, 0, 180px);
+  }
+  
+  .cube-face-left {
+    background-image: url(../images/b3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: rotateY(-90deg) translate3d(0, 0, 180px);
+  }
+  .cube-face-right {
+    background-image: url(../images/b4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: rotateY(90deg) translate3d(0, 0, 180px);
+  }
+  
+  @keyframes spin {
+    from,
+    20% {
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    25%,
+    40% {
+      -moz-transform: rotateY(90deg);
+      -ms-transform: rotateY(90deg);
+      transform: rotateY(90deg);
+    }
+    45%,
+    60% {
+      -moz-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+    }
+    65%,
+    80% {
+      -moz-transform: rotateY(270deg);
+      -ms-transform: rotateY(270deg);
+      transform: rotateY(270deg);
+    }
+    85%,
+    to {
+      -moz-transform: rotateY(360deg);
+      -ms-transform: rotateY(360deg);
+      transform: rotateY(360deg);
+    }
+  }
+  
+  .cube {
+    animation-name: spin;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+  }
+  .cube:hover {
+    animation-play-state: paused;
+  }
+  
+
+
+ /* Farm */
+
+  .farm-flex{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+  }
+
+  .farm-content p{
+      padding-top:10px;
+width:500px;
+font-size: 1.2rem;
+padding-right: 5%;
+      }
